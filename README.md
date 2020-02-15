@@ -3,12 +3,8 @@
 
 >[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7GP654TH8996A&currency_code=GBP)
 
-#### Version 2.1.1 (18/01/2017)
-- Tested on Android and iOS using Cordova cli 6.4.0, Cordova android 6.0.0 and Cordova ios 4.3.1
-- Available sdk functions: onTokenRefresh, getToken, subscribeToTopic, unsubscribeFromTopic and onNotification
-- 'google-services.json' and 'GoogleService-Info.plist' are added automatically from Cordova project root to platform folders
-- Added data payload parameter to check whether the user tapped on the notification or was received while in foreground.
-- **Free testing server available for free! https://cordova-plugin-fcm.appspot.com**
+#### Version 2.1.2 (18/05/2019)
+- Changed to Cordova 9.0 podspec for dependant 
 
 ##Installation
 Make sure you have ‘google-services.json’ for Android or  ‘GoogleService-Info.plist’ for iOS in your Cordova project root folder. You don´t need to configure anything else in order to have push notification working for both platforms, everything is magic.
@@ -35,7 +31,6 @@ Put the downloaded file 'GoogleService-Info.plist' in the Cordova project root f
 ##Usage
 
 :warning: It's highly recommended to use REST API to send push notifications because Firebase console does not have all the functionalities. **Pay attention to the payload example in order to use the plugin properly**.  
-You can also test your notifications with the free testing server: https://cordova-plugin-fcm.appspot.com
 
 ####Receiving Token Refresh
 
@@ -134,7 +129,7 @@ Send a push notification to a single device or topic.
 ```
 The MIT License
 
-Copyright (c) 2017 Felipe Echanique Torres (felipe.echanique in the gmail.com)
+Copyright (c) 2017 Felipe Echanique Torres (felipe.echanique at gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
