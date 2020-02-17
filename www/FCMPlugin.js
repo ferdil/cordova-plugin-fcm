@@ -1,7 +1,6 @@
 var exec = require('cordova/exec');
 
 function FCMPlugin() { 
-	console.log("FCMPlugin.js: is created");
 }
 
 // SUBSCRIBE TO TOPIC //
@@ -37,7 +36,7 @@ FCMPlugin.prototype.onTokenRefreshReceived = function(token){
 	console.log(token)
 }
 // FIRE READY //
-exec(function(result){ console.log("FCMPlugin Ready OK") }, function(result){ console.log("FCMPlugin Ready ERROR") }, "FCMPlugin",'ready',[]);
+exec(function(result){}, function(result){ console.log("FCMPlugin Ready ERROR") }, "FCMPlugin",'ready',[]);
 
 
 
